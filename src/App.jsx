@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import TextInput from './components/TextInput';
 import KeywordsModal from './components/KeywordsModal';
+import './index.css';
+
 const App = () => {
   const [keywords, setkeywords] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
@@ -49,7 +51,12 @@ const App = () => {
   };
 
   return (
-    <Box bg="blue.600" color="white" height="100vh" padding={130}>
+    <Box
+      bg="brand.dark"
+      color="white"
+      height="100vh"
+      padding={{ md: '130', lg: '130', xl: '130' }}
+    >
       <Container maxW="3xl" centerContent>
         <Header />
         <TextInput extractKeywords={extractKeywords} />
