@@ -1,10 +1,16 @@
 import { Heading, Image, Text } from '@chakra-ui/react';
-import logo from '../assets/light-bulb.svg';
+import logo from '../assets/ai.png';
 
 const Header = () => {
   return (
     <>
-      <Image src={logo} alt="logo" width={100} marginBottom="1rem" />
+      <Image
+        src={logo}
+        alt="logo"
+        width={100}
+        marginBottom="1rem"
+        marginTop={{ base: '1rem' }}
+      />
       <Heading
         fontSize={['sm', 'md', 'lg', 'xl']}
         maxWidth={{ base: '100%' }}
